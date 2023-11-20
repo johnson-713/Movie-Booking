@@ -1,13 +1,15 @@
 .movieCard {
     display: flex;
     margin-bottom: 30px;
-    max-width: 360px;
+    max-width: 440px;
+    flex-direction: column;
 }
 
 .movieCard > img {
-    object-fit: contain;
-    width: 360px;
-    height: 270px;
+    object-fit: cover;
+    width: 440px;
+    height: 350px;
+    cursor: pointer;
 }
 
 .movieCard__text {
@@ -16,8 +18,17 @@
 
 .movieCard__text > h3 {
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .movieCard__text > p {
     margin-bottom: 10px;
+}
+
+#lang {
+    font-size: 12px;
+}
+
+#price {
+    font-weight: 600;
 }

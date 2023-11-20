@@ -1,0 +1,36 @@
+.movieList {
+    margin: 20px;
+}
+
+.movieList__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.movieList__nav--btns {
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.movieList__nav > button {
+    width: 92px;
+    height: 42px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+#tag {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#desc {
+    font-size: 12px;
+}
+
+.movieList__movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+}

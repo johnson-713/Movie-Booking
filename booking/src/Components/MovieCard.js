@@ -7,8 +7,8 @@ const MovieCard = ({name, language, image, price}) => {
       <img src={image} alt='' />
       <div className='movieCard__text'>
         <h3>{name}</h3>
-        <p>{language}</p>
-        <p>Rs. {price} per seat</p>
+        <p id='lang'>{language}</p>
+        <p id='price'>Rs. {price} per seat</p>
       </div>
     </div>
   )

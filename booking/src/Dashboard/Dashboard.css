@@ -1,0 +1,16 @@
+.sidebar {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 250px;
+    height: 100vh;
+}
+
+.sidebar > button {
+    height: 25px;
+    padding: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 80%;
+}
