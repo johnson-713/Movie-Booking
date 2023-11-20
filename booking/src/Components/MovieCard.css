@@ -1,0 +1,23 @@
+.movieCard {
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 360px;
+}
+
+.movieCard > img {
+    object-fit: contain;
+    width: 360px;
+    height: 270px;
+}
+
+.movieCard__text {
+    text-align: left;
+}
+
+.movieCard__text > h3 {
+    margin-top: 10px;
+}
+
+.movieCard__text > p {
+    margin-bottom: 10px;
+}
