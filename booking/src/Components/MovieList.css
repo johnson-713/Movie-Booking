@@ -29,7 +29,7 @@
     font-size: 12px;
 }
 
-.movieList__movies {
+.movieList__selection {
     display: flex;
     flex-wrap: wrap;
     gap: 75px;

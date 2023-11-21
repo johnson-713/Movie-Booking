@@ -3,7 +3,8 @@ import MovieList from './Components/MovieList';
 import SignupScreen from './Components/SignupScreen';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from './Dashboard/Dashboard';
+import Seats from './Dashboard/Seats';
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<SignupScreen />} />
           <Route path='/movies' element={<MovieList />} />
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/seats' element={<Seats />} />
         </Routes>
       </Router>
     </div>

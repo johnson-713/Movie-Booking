@@ -1,0 +1,18 @@
+.account {
+    flex: 0.8;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-left: 2px solid #000;
+}
+
+.account > button {
+    background-color: red;
+    color: #FFF;
+    border: none;
+    width: 288px;
+    padding: 5px;
+}

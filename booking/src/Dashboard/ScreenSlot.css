@@ -1,0 +1,34 @@
+.screenSlot {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-left: 2px solid #000;
+}
+
+.screenSlot__btns {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.screenSlot__btns > button {
+    width: 100px;
+    padding: 10px;
+}
+
+.screenSlot__btns > button:hover {
+    background-color: rgb(55, 255, 0);
+}
+
+.screenSlot__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 330px;
+    margin-bottom: 200px;
+}
