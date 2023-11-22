@@ -1,65 +1,76 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './MovieList.css';
 import MovieCard from './MovieCard';
-import Dashboard from '../Dashboard/Dashboard';
+import Screen from '../Dashboard/Screen';
 
 
 const MovieList = () => {
     const [selectedMovie, setSelectedMovie] = useState(null);
+    const [user, setUser] = useState(null);
+
+useEffect(() => {
+    const username = localStorage.getItem("username")
+    const password = localStorage.getItem("password")
+
+    if(username && password){
+        setUser({username, password})
+    }
+}, [])
+
     const Movies = [
         {
             id: 1,
             title: "Leo",
             image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
+            price: 180,
+            language: "Tamil"
+        },
+        {
+            id: 2,
+            title: "Kannur Squad",
+            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Kannur_Squad_poster.jpeg",
             price: 200,
             language: "Tamil"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
+            id: 3,
+            title: "Jigarthanda DoubleX",
+            image: "https://upload.wikimedia.org/wikipedia/en/4/4e/Jigarthanda_DoubleX.jpg",
             price: 200,
             language: "Tamil"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
-            price: 200,
+            id: 4,
+            title: "Mark Antony",
+            image: "https://upload.wikimedia.org/wikipedia/en/4/40/Mark_Antony_2023_poster.jpg",
+            price: 150,
             language: "Tamil"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
-            price: 200,
+            id: 5,
+            title: "Irugapatru",
+            image: "https://upload.wikimedia.org/wikipedia/en/0/09/Irugapatru.jpg",
+            price: 150,
             language: "Tamil"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
-            price: 200,
+            id: 6,
+            title: "Jailer",
+            image: "https://upload.wikimedia.org/wikipedia/en/c/cb/Jailer_2023_Tamil_film_poster.jpg",
+            price: 150,
             language: "Tamil"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
+            id: 7,
+            title: "Ghost",
+            image: "https://upload.wikimedia.org/wikipedia/en/c/c2/Ghost_Kannada_Film.jpg",
             price: 200,
-            language: "Tamil"
+            language: "Kannada"
         },
         {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
-            price: 200,
-            language: "Tamil"
-        },
-        {
-            id: 1,
-            title: "Leo",
-            image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
+            id: 8,
+            title: "RDX: Robert Dony Xavier",
+            image: "https://upload.wikimedia.org/wikipedia/en/b/be/RDX-_Robert_Dony_Xavier_poster.jpg",
             price: 200,
             language: "Tamil"
         },
@@ -67,7 +78,7 @@ const MovieList = () => {
   return (
     <>
     {selectedMovie ? (
-        <Dashboard />
+        <Screen user={user} selectedMovie={selectedMovie} />
     ) : (
         <div className='movieList'>
         <div className='movieList__nav'>

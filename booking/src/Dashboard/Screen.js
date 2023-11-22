@@ -3,10 +3,11 @@ import './Screen.css';
 import Sidebar from './Sidebar';
 import ScreenSlot from './ScreenSlot';
 
-const Screen = () => {
+const Screen = ({user}) => {
+
   return (
     <div className='screens'>
-      <Sidebar />
+      <Sidebar user={user} />
       <ScreenSlot />
     </div>
   )

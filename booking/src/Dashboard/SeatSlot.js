@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import './SeatSlot.css';
 
 function Cell ({filled, onClick}) {
@@ -15,10 +15,16 @@ const SeatSlot = () => {
         [1,1,1,1,1,1,1,1,1],
         [1,1,1,1,1,1,1,1,1]
       ]
+
     
       const activateCells = (index) => {
         const newOrder = [...order, index]
         setOrder(newOrder)
+      }
+
+      const calculatePrice = () => {
+          const totalPrice = order.length*180
+          return totalPrice
       }
 
   return (
@@ -34,10 +40,10 @@ const SeatSlot = () => {
     </div>
     <div className='booking'>
       <div className='booking__details'>
-        <p>Total seats: {order.reduce(index => index+1, 0)}</p>
-        <p>Price: {}</p>
+        <p>Total seats: {order.length}</p>
+        <p>Price: {calculatePrice()}</p>
       </div>
-      <button className='booking__btn'>Book</button>
+      <button className='booking__btn' onClick={() => {}}>Book</button>
     </div>
     </div>
   )

@@ -3,10 +3,10 @@ import './Seats.css';
 import Sidebar from './Sidebar';
 import SeatSlot from './SeatSlot';
 
-const Seats = () => {
+const Seats = ({user}) => {
   return (
     <div className='seats'>
-      <Sidebar />
+      <Sidebar user={user} />
       <SeatSlot />
     </div>
   )
