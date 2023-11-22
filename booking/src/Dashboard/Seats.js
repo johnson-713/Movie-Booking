@@ -3,11 +3,11 @@ import './Seats.css';
 import Sidebar from './Sidebar';
 import SeatSlot from './SeatSlot';
 
-const Seats = ({user}) => {
+const Seats = ({user, selectedMovie}) => {
   return (
     <div className='seats'>
       <Sidebar user={user} />
-      <SeatSlot />
+      <SeatSlot movieName={selectedMovie?.title} />
     </div>
   )
 }

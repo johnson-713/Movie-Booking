@@ -3,12 +3,12 @@ import './Screen.css';
 import Sidebar from './Sidebar';
 import ScreenSlot from './ScreenSlot';
 
-const Screen = ({user}) => {
+const Screen = ({user, selectedMovie}) => {
 
   return (
     <div className='screens'>
       <Sidebar user={user} />
-      <ScreenSlot />
+      <ScreenSlot movieName={selectedMovie?.title}/>
     </div>
   )
 }

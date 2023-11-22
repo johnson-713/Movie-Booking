@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import './SeatSlot.css';
+import { useNavigate } from 'react-router-dom';
 
 function Cell ({filled, onClick}) {
     return <button type='button'
@@ -9,7 +10,8 @@ function Cell ({filled, onClick}) {
 }
 
 const SeatSlot = () => {
-    const [order, setOrder] = useState([]);
+  const [selectedSeats, setSelectedSeats] = useState([])
+  const navigate = useNavigate()
     const config = [
         [1,1,1,1,1,1,1,1,1],
         [1,1,1,1,1,1,1,1,1],
@@ -18,14 +20,23 @@ const SeatSlot = () => {
 
     
       const activateCells = (index) => {
-        const newOrder = [...order, index]
-        setOrder(newOrder)
+        if(selectedSeats.includes(index)){
+          const updatedSeats = selectedSeats.filter((seat) => seat !== index)
+          setSelectedSeats(updatedSeats)
+        } else {
+          setSelectedSeats([...selectedSeats, index])
+        }
       }
 
       const calculatePrice = () => {
-          const totalPrice = order.length*180
-          return totalPrice
+          const totalPrice = selectedSeats.length*180
+          return totalPrice;
       }
+
+      const handleBooking = () => {
+       navigate('/message')
+      };
+    
 
   return (
         <div className='wrapper'>
@@ -34,16 +45,16 @@ const SeatSlot = () => {
         return value ? <Cell
           key={index}
           onClick={() => activateCells(index)}
-          filled={order.includes(index)}
-        /> : <span />
+          filled={selectedSeats.includes(index)}
+        /> : <span key={index} />
       })}
     </div>
     <div className='booking'>
       <div className='booking__details'>
-        <p>Total seats: {order.length}</p>
+        <p>Total seats: {selectedSeats.length}</p>
         <p>Price: {calculatePrice()}</p>
       </div>
-      <button className='booking__btn' onClick={() => {}}>Book</button>
+      <button className='booking__btn' onClick={handleBooking}>Book</button>
     </div>
     </div>
   )

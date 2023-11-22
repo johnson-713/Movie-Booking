@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './MovieList.css';
 import MovieCard from './MovieCard';
 import Screen from '../Dashboard/Screen';
+import Seats from '../Dashboard/Seats';
 
 
 const MovieList = () => {
@@ -29,49 +30,49 @@ useEffect(() => {
             id: 2,
             title: "Kannur Squad",
             image: "https://upload.wikimedia.org/wikipedia/en/7/75/Kannur_Squad_poster.jpeg",
-            price: 200,
+            price: 180,
             language: "Tamil"
         },
         {
             id: 3,
             title: "Jigarthanda DoubleX",
             image: "https://upload.wikimedia.org/wikipedia/en/4/4e/Jigarthanda_DoubleX.jpg",
-            price: 200,
+            price: 180,
             language: "Tamil"
         },
         {
             id: 4,
             title: "Mark Antony",
             image: "https://upload.wikimedia.org/wikipedia/en/4/40/Mark_Antony_2023_poster.jpg",
-            price: 150,
+            price: 180,
             language: "Tamil"
         },
         {
             id: 5,
             title: "Irugapatru",
             image: "https://upload.wikimedia.org/wikipedia/en/0/09/Irugapatru.jpg",
-            price: 150,
+            price: 180,
             language: "Tamil"
         },
         {
             id: 6,
             title: "Jailer",
             image: "https://upload.wikimedia.org/wikipedia/en/c/cb/Jailer_2023_Tamil_film_poster.jpg",
-            price: 150,
+            price: 180,
             language: "Tamil"
         },
         {
             id: 7,
             title: "Ghost",
             image: "https://upload.wikimedia.org/wikipedia/en/c/c2/Ghost_Kannada_Film.jpg",
-            price: 200,
+            price: 180,
             language: "Kannada"
         },
         {
             id: 8,
             title: "RDX: Robert Dony Xavier",
             image: "https://upload.wikimedia.org/wikipedia/en/b/be/RDX-_Robert_Dony_Xavier_poster.jpg",
-            price: 200,
+            price: 180,
             language: "Tamil"
         },
     ]
@@ -103,6 +104,11 @@ useEffect(() => {
         </div>
       </div>
     )}
+    {
+        selectedMovie && (
+            <Seats selectedMovie={selectedMovie} />
+        )
+    }
     </>
     
   )
