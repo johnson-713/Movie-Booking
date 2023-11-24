@@ -9,7 +9,7 @@
 }
 
 .movieList__nav--btns {
-    margin-top: 80px;
+    margin-top: 70px;
     cursor: pointer;
 }
 
@@ -32,5 +32,25 @@
 .movieList__selection {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    .movieList__nav--btns {
+        margin-top: 60px;
+    }
+
+    .movieList__nav > button {
+        width: 80px; 
+        height: 36px; 
+    }
+
+    #tag,
+    #desc {
+        font-size: 10px; 
+    }
+
+    .movieList__selection {
+        gap: 10px;
+    }
 }

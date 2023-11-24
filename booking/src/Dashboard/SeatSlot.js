@@ -34,13 +34,20 @@ const SeatSlot = () => {
       }
 
       const handleBooking = () => {
-       navigate('/message')
+        const totalSeats = selectedSeats.length
+        const price = calculatePrice()
+       navigate('/message', {
+        state: {
+          totalSeats,
+          price
+        }
+       })
       };
     
 
   return (
         <div className='wrapper'>
-      <div className='grid' style={{gridTemplateColumns: `repeat(${config[0].length}, 1fr)`}}>
+      <div className='grid' style={{gridTemplateColumns: `repeat(${config[0].length}, minmax(0, 1fr))`}}>
       {config.flat(1).map((value, index) => {
         return value ? <Cell
           key={index}

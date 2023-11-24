@@ -18,7 +18,7 @@ const Sidebar = ({user}) => {
   }
   return (
     <div className='sidebar'>
-      <h3 id='title'>Hi, {user?.username}</h3>
+      <h3 id='title'>Hi, {user && user.username}</h3>
       <button onClick={handleAccount}>Account</button>
       <button onClick={handleTiming}>Timing</button>
       <button onClick={handleSeats}>Seats</button>

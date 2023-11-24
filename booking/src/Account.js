@@ -6,6 +6,8 @@ const Account = () => {
   const navigate = useNavigate();
 
   const handleDelete = () => {
+    localStorage.removeItem('username')
+    localStorage.removeItem('password')
     navigate('/');
   }
   return (

@@ -1,16 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ScreenSlot.css';
 import { useNavigate } from 'react-router-dom';
 
 const ScreenSlot = ({movieName}) => {
-  const [selectedTime, setSelectedTime] = useState(null);
   const navigate = useNavigate();
 
   const handleTimeClick = (time) => {
-    setSelectedTime(time);
-    console.log(selectedTime)
-
-    // Navigate to the Seats page with the selected time when a time slot is clicked
     navigate('/seats');
   };
   return (

@@ -3,7 +3,6 @@
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -40,3 +39,15 @@
     }
   }
   
+
+  @media only screen and (min-width: 350px) and (max-width: 450px) {
+    .modal__content {
+      max-width: 80%; 
+      max-height: 80vh; 
+    }
+  
+    .modal__title,
+    .modal__seats {
+      width: 85%; 
+    }
+  }

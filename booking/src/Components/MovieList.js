@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './MovieList.css';
 import MovieCard from './MovieCard';
 import Screen from '../Dashboard/Screen';
-import Seats from '../Dashboard/Seats';
+// import Seats from '../Dashboard/Seats';
 
 
 const MovieList = () => {
@@ -104,11 +104,11 @@ useEffect(() => {
         </div>
       </div>
     )}
-    {
+    {/* {
         selectedMovie && (
-            <Seats selectedMovie={selectedMovie} />
+            <Seats user={user} />
         )
-    }
+    } */}
     </>
     
   )

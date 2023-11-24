@@ -23,8 +23,8 @@ const SignupScreen = () => {
       <form onSubmit={handleSubmit}>
         <h1>Sign Up</h1>
         <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
-        <input type="text" placeholder="Name" value={username} onChange={(e) => setUsername(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input type="text" id="username" placeholder="Name" value={username} onChange={(e) => setUsername(e.target.value)} required />
+        <input type="password" id="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         <button type="submit">Sign Up</button>
       </form>
     </div>

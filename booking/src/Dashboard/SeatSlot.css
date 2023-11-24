@@ -33,8 +33,9 @@
 .booking {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    width: 300px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 300px;
 }
 
 .booking__details {
@@ -52,6 +53,34 @@
 .booking__btn:hover {
     background-color: #000;
     color: #fff;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .wrapper {
+      gap: 10px; 
+  }
+
+  .grid {
+      max-width: 80%; 
+  }
+
+  .booking {
+      margin-top: 20px; 
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 800px) {
+  .wrapper {
+    gap: 12px; 
+}
+
+.grid {
+    max-width: 80%; 
+}
+
+.booking {
+    margin-top: 20px; 
+}
 }
 
 
