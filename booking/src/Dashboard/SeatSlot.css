@@ -30,8 +30,13 @@
   background-color: rgb(76, 249, 8);
 }
 
-.cell-activated:visited {
-  background-color: rgb(76, 249, 8);
+.cell-available {
+  cursor: pointer;
+}
+
+.cell-unavailable {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .booking {

@@ -27,6 +27,11 @@
     color: #FFF;
 }
 
+.sidebar > button.active {
+    background-color: #000;
+    color: #FFF;
+}
+
 @media only screen and (min-width: 350px) and (max-width: 450px) {
     .sidebar {
         margin-top: 170px;

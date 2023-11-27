@@ -20,34 +20,42 @@ const ScreenSlot = ({ movieName }) => {
     {
       id: 1,
       timing: "9.30 AM",
+      totalSeats: 27,
     },
     {
       id: 2,
       timing: "10.30 AM",
+      totalSeats: 27,
     },
     {
       id: 3,
       timing: "11.30 AM",
+      totalSeats: 27,
     },
     {
       id: 4,
       timing: "12.30 AM",
+      totalSeats: 27,
     },
     {
       id: 5,
       timing: "1.30 AM",
+      totalSeats: 27,
     },
     {
       id: 6,
       timing: "2.30 AM",
+      totalSeats: 27,
     },
     {
       id: 7,
       timing: "3.30 AM",
+      totalSeats: 27,
     },
     {
       id: 8,
       timing: "4.30 AM",
+      totalSeats: 27,
     },
   ];
 

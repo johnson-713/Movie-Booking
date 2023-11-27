@@ -2,19 +2,22 @@ import React, { useEffect, useState } from "react";
 import "./SeatSlot.css";
 import { useNavigate } from "react-router-dom";
 
-function Cell({ filled, onClick }) {
+function Cell({ filled, onClick, available }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={filled ? "cell cell-activated" : "cell"}
+      className={`cell ${filled ? "cell-activated" : ""} ${
+        available ? "cell-available" : "cell-unavialable"
+      }`}
+      disabled={!available}
     />
   );
 }
 
 const SeatSlot = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
-  const [initialSelectedSeats, setInitialSelectedSeats] = useState([])
+  const [bookedSeats, setBookedSeats] = useState([])
   const navigate = useNavigate();
   const config = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -22,12 +25,23 @@ const SeatSlot = () => {
     [1, 1, 1, 1, 1, 1, 1, 1, 1],
   ];
 
+  useEffect(() => {
+    const storedSelectedSeats = JSON.parse(localStorage.getItem("selectedSeats")) || []
+    setSelectedSeats(storedSelectedSeats)
+
+    const storedBookedSeats = JSON.parse(localStorage.getItem("bookedSeats")) || []
+    setBookedSeats(storedBookedSeats)
+  }, [])
+
   const activateCells = (index) => {
     if (selectedSeats.includes(index)) {
       const updatedSeats = selectedSeats.filter((seat) => seat !== index);
       setSelectedSeats(updatedSeats);
     } else {
-      setSelectedSeats([...selectedSeats, index]);
+      if (!bookedSeats.includes(index)) {
+        const updatedSeats = [...selectedSeats, index]
+        setSelectedSeats(updatedSeats);
+      }
     }
   };
 
@@ -37,20 +51,29 @@ const SeatSlot = () => {
   };
 
   const handleBooking = () => {
-    const totalSeats = selectedSeats.length;
-    setInitialSelectedSeats(selectedSeats)
+    setBookedSeats((prevBookedSeats) => {
+      const updatedBookedSeats = [...prevBookedSeats, ...selectedSeats];
+      console.log(updatedBookedSeats); 
+      return updatedBookedSeats;
+    });
+    setSelectedSeats([])
     const price = calculatePrice();
     navigate("/message", {
       state: {
-        totalSeats,
+        totalSeats: selectedSeats.length,
         price,
       },
     });
   };
 
+  useEffect(() => {  
+    localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats)) 
+    localStorage.setItem("bookedSeats", JSON.stringify(bookedSeats))
+  }, [selectedSeats, bookedSeats]);
+
   useEffect(() => {
-    setSelectedSeats(initialSelectedSeats)
-  }, [initialSelectedSeats])
+    console.log(bookedSeats)
+  }, [bookedSeats])
 
   return (
     <div className="wrapper">
@@ -66,6 +89,7 @@ const SeatSlot = () => {
               key={index}
               onClick={() => activateCells(index)}
               filled={selectedSeats.includes(index)}
+              available={!bookedSeats.includes(index)}
             />
           ) : (
             <span key={index} />
