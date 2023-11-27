@@ -104,11 +104,6 @@ useEffect(() => {
         </div>
       </div>
     )}
-    {/* {
-        selectedMovie && (
-            <Seats user={user} />
-        )
-    } */}
     </>
     
   )

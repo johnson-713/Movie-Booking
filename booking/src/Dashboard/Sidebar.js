@@ -1,12 +1,14 @@
 import React from 'react';
 import './Sidebar.css';
 import { useNavigate } from 'react-router-dom';
+import { useScreenSlotContext } from '../ScreenSlotProvider';
 
 const Sidebar = ({user}) => {
   const navigate = useNavigate();
+  const {activeButton} = useScreenSlotContext()
 
   const handleTiming = () => {
-    navigate('/screen');
+    navigate('/screen', { state: { activeButton: activeButton}});
   }
 
   const handleAccount = () => {

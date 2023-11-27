@@ -18,9 +18,15 @@
 .screenSlot__btns > button {
     width: 100px;
     padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-.screenSlot__btns > button:hover {
+.btns:hover {
+    background-color: rgb(55, 255, 0);
+}
+
+.btns.active {
     background-color: rgb(55, 255, 0);
 }
 

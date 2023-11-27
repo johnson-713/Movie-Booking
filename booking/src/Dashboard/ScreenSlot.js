@@ -1,32 +1,83 @@
-import React from 'react';
-import './ScreenSlot.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import "./ScreenSlot.css";
+import { useLocation } from "react-router-dom";
+import { useScreenSlotContext } from "../ScreenSlotProvider";
 
-const ScreenSlot = ({movieName}) => {
-  const navigate = useNavigate();
+const ScreenSlot = ({ movieName }) => {
+  const { state } = useLocation();
 
-  const handleTimeClick = (time) => {
-    navigate('/seats');
+  const {activeButton, setActiveButton} = useScreenSlotContext();
+
+  useEffect(() => {
+    const initialActiveButton = state && state.activeButton
+      ? state.activeButton
+      : localStorage.getItem("activeButton") || null;
+    setActiveButton(initialActiveButton);
+    localStorage.setItem("activeButton", initialActiveButton);
+  }, [state, setActiveButton]);
+
+  const Screens = [
+    {
+      id: 1,
+      timing: "9.30 AM",
+    },
+    {
+      id: 2,
+      timing: "10.30 AM",
+    },
+    {
+      id: 3,
+      timing: "11.30 AM",
+    },
+    {
+      id: 4,
+      timing: "12.30 AM",
+    },
+    {
+      id: 5,
+      timing: "1.30 AM",
+    },
+    {
+      id: 6,
+      timing: "2.30 AM",
+    },
+    {
+      id: 7,
+      timing: "3.30 AM",
+    },
+    {
+      id: 8,
+      timing: "4.30 AM",
+    },
+  ];
+
+  const handleActive = (id) => {
+    setActiveButton(id);
   };
+
   return (
-    <div className='screenSlot'>
+    <div className="screenSlot">
       <h2>{movieName}</h2>
-      <div className='screenSlot__btns'>
-        <button onClick={() => handleTimeClick('9.30 AM')}>9.30 AM</button>
-        <button onClick={() => handleTimeClick('10.30 AM')}>10.30 AM</button>
-        <button onClick={() => handleTimeClick('11.30 AM')}>11.30 AM</button>
-        <button onClick={() => handleTimeClick('12.30 AM')}>12.30 AM</button>
-        <button onClick={() => handleTimeClick('1.30 AM')}>1.30 AM</button>
-        <button onClick={() => handleTimeClick('2.30 AM')}>2.30 AM</button>
-        <button onClick={() => handleTimeClick('3.30 AM')}>3.30 AM</button>
-        <button onClick={() => handleTimeClick('4.30 AM')}>4.30 AM</button>
+      <div className="screenSlot__btns">
+        {Screens.map((screen) => (
+          <button
+            className={`btns ${activeButton === screen.id ? "active" : ""}`}
+            key={screen.id}
+            onClick={() => handleActive(screen.id)}
+          >
+            {screen.timing}
+          </button>
+        ))}
       </div>
-      <div className='screenSlot__text'>
-            <span>Now select your seats</span>
-            <span>Please select your time slot</span>
+      <div className="screenSlot__text">
+        {activeButton ? (
+          <span>Now select your seats</span>
+        ) : (
+          <span>Please select your time slot</span>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ScreenSlot;

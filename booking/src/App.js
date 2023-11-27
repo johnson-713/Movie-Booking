@@ -32,7 +32,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard user={user} />} />
           <Route path='/screen' element={<Screen user={user} />} />
           <Route path='/seats' element={<Seats user={user} />} />
-          <Route path='/message' element={<BookingModal />} />
+          <Route path='/message' element={<BookingModal user={user} />} />
         </Routes>
       </Router>
     </div>
