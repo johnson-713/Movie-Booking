@@ -1,12 +1,13 @@
 import React from 'react';
 import './MovieCard.css';
 
-const MovieCard = ({name, language, image, price}) => {
+const MovieCard = ({title, language, price, image, id}) => {
+  
   return (
-    <div className='movieCard'>
+    <div className='movieCard' id={id}>
       <img src={image} alt='' />
       <div className='movieCard__text'>
-        <h3>{name}</h3>
+        <h3>{title}</h3>
         <p id='lang'>{language}</p>
         <p id='price'>Rs. {price} per seat</p>
       </div>

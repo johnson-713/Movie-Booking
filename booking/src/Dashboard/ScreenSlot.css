@@ -1,4 +1,12 @@
-.screenSlot {
+.screen {
+    display: flex;
+}
+
+.screen__sidebar {
+    flex: 0.2;
+}
+
+.screen__screenSlot {
     flex: 0.8;
     display: flex;
     flex-direction: column;
@@ -20,10 +28,6 @@
     padding: 10px;
     border: none;
     cursor: pointer;
-}
-
-.btns:hover {
-    background-color: rgb(55, 255, 0);
 }
 
 .btns.active {

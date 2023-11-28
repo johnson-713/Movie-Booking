@@ -1,90 +1,61 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./ScreenSlot.css";
-import { useLocation } from "react-router-dom";
-import { useScreenSlotContext } from "../ScreenSlotProvider";
+import Screens from "../Components/db/Data";
+import Sidebar from "./Sidebar";
+import Seat from "./Seat";
 
-const ScreenSlot = ({ movieName }) => {
-  const { state } = useLocation();
 
-  const {activeButton, setActiveButton} = useScreenSlotContext();
 
-  useEffect(() => {
-    const initialActiveButton = state && state.activeButton
-      ? state.activeButton
-      : localStorage.getItem("activeButton") || null;
-    setActiveButton(initialActiveButton);
-    localStorage.setItem("activeButton", initialActiveButton);
-  }, [state, setActiveButton]);
+const ScreenSlot = ({ movieName, user }) => {
+  console.log(movieName)
+  const [selectedScreens, setSelectedScreens] = useState(null)
 
-  const Screens = [
-    {
-      id: 1,
-      timing: "9.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 2,
-      timing: "10.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 3,
-      timing: "11.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 4,
-      timing: "12.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 5,
-      timing: "1.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 6,
-      timing: "2.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 7,
-      timing: "3.30 AM",
-      totalSeats: 27,
-    },
-    {
-      id: 8,
-      timing: "4.30 AM",
-      totalSeats: 27,
-    },
-  ];
+  const handleScreenSelect = (screen) => {
+    if(screen?.id === selectedScreens?.id){
+      setSelectedScreens(screen)
+      return
+    } 
+    setSelectedScreens(screen)
+  }
 
-  const handleActive = (id) => {
-    setActiveButton(id);
-  };
+  const selectedMovieTitle = movieName ? movieName.title : null;
 
   return (
-    <div className="screenSlot">
-      <h2>{movieName}</h2>
+    <>
+    {selectedScreens ? (
+      <Seat selectedScreen={selectedScreens} movieName={selectedMovieTitle} user={user} />
+    ) : (
+      <div className="screen">
+      <div className="screen__sidebar">
+        <Sidebar user={user} />
+      </div>
+      <div className="screen__screenSlot">
+      <h2>{selectedMovieTitle || "No movie selected"}</h2>
       <div className="screenSlot__btns">
-        {Screens.map((screen) => (
-          <button
-            className={`btns ${activeButton === screen.id ? "active" : ""}`}
+        {
+          Screens.map((screen) => (
+            <button
+            className={`btns ${selectedScreens && selectedScreens.id === screen.id ? "active" : ""}`}
             key={screen.id}
-            onClick={() => handleActive(screen.id)}
+            onClick={() => handleScreenSelect(screen)}
           >
-            {screen.timing}
+            {screen.time}
           </button>
-        ))}
+          ))
+        }
       </div>
       <div className="screenSlot__text">
-        {activeButton ? (
+        {selectedScreens ? (
           <span>Now select your seats</span>
         ) : (
           <span>Please select your time slot</span>
         )}
       </div>
     </div>
+    </div>
+    )}
+    </>
+    
   );
 };
 

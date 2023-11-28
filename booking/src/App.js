@@ -3,10 +3,10 @@ import MovieList from './Components/MovieList';
 import SignupScreen from './Components/SignupScreen';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Screen from './Dashboard/Screen';
-import Seats from './Dashboard/Seats';
 import Dashboard from './Dashboard/Dashboard';
 import BookingModal from './Dashboard/BookingModal';
+import ScreenSlot from './Dashboard/ScreenSlot';
+import Seat from './Dashboard/Seat';
 
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
           <Route path='/' element={<SignupScreen />} />
           <Route path='/movies' element={<MovieList />} />
           <Route path='/dashboard' element={<Dashboard user={user} />} />
-          <Route path='/screen' element={<Screen user={user} />} />
-          <Route path='/seats' element={<Seats user={user} />} />
+          <Route path='/screen' element={<ScreenSlot user={user} />} />
+          <Route path='/seats' element={<Seat user={user} />} />
           <Route path='/message' element={<BookingModal user={user} />} />
         </Routes>
       </Router>
