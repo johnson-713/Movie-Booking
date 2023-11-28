@@ -19,6 +19,7 @@ useEffect(() => {
 }, [selectedMovie])
 
 const handleClick = (movie) => {
+  localStorage.setItem("selectedMovie", JSON.stringify(movie))
   setSelectedMovie(movie)
 }
 
@@ -47,7 +48,7 @@ const handleClick = (movie) => {
                     language={movie.language}
                     id={movie.id}
                     price={movie.price}
-                      />
+                    />
                 </div>     
               ))}
         </div>

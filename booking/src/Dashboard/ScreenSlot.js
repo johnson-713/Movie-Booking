@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ScreenSlot.css";
 import Screens from "../Components/db/Data";
 import Sidebar from "./Sidebar";
@@ -6,31 +6,39 @@ import Seat from "./Seat";
 
 
 
-const ScreenSlot = ({ movieName, user }) => {
-  console.log(movieName)
+const ScreenSlot = ({ user }) => {
   const [selectedScreens, setSelectedScreens] = useState(null)
+  const [selectedMovie, setSelectedMovie] = useState(null)
+
+  useEffect(() => {
+    const storedMovie = localStorage.getItem('selectedMovie')
+    if(storedMovie) {
+      setSelectedMovie(JSON.parse(storedMovie))
+    }
+  }, [])
 
   const handleScreenSelect = (screen) => {
     if(screen?.id === selectedScreens?.id){
-      setSelectedScreens(screen)
+      setSelectedScreens(null)
       return
     } 
+    localStorage.setItem("selectedScreen", JSON.stringify(screen))
     setSelectedScreens(screen)
   }
 
-  const selectedMovieTitle = movieName ? movieName.title : null;
+  const movieName = selectedMovie?.title || "No movie selected";
 
   return (
     <>
     {selectedScreens ? (
-      <Seat selectedScreen={selectedScreens} movieName={selectedMovieTitle} user={user} />
+      <Seat selectedScreen={selectedScreens} movieName={movieName} user={user} />
     ) : (
       <div className="screen">
       <div className="screen__sidebar">
         <Sidebar user={user} />
       </div>
       <div className="screen__screenSlot">
-      <h2>{selectedMovieTitle || "No movie selected"}</h2>
+      <h2>{movieName}</h2>
       <div className="screenSlot__btns">
         {
           Screens.map((screen) => (
