@@ -8,6 +8,9 @@ const Account = () => {
   const handleDelete = () => {
     localStorage.removeItem('username')
     localStorage.removeItem('password')
+    localStorage.removeItem('selectedSeats')
+    localStorage.removeItem('selectedScreen')
+    localStorage.removeItem('selectedMovie')
     navigate('/');
   }
   return (
