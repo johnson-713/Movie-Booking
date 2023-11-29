@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const Sidebar = ({user}) => {
+const Sidebar = () => {
+  const [user, setUser] = useState(null)
   const navigate = useNavigate();
   const location = useLocation()
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('username')
+    if(storedUser){
+      setUser(storedUser)
+    }
+  }, [])
 
   const handleTiming = () => {
     navigate('/screen');
@@ -19,7 +27,7 @@ const Sidebar = ({user}) => {
   }
   return (
     <div className='sidebar'>
-      <h3 id='title'>Hi, {user && user.username}</h3>
+      <h3 id='title'>Hi, {user}</h3>
       <button className={location.pathname === '/dashboard' ? 'active' : ''} onClick={handleAccount}>Account</button>
       <button className={location.pathname === '/screen' ? 'active' : ''} onClick={handleTiming}>Timing</button>
       <button className={location.pathname === '/seats' ? 'active' : ''} onClick={handleSeats}>Seats</button>

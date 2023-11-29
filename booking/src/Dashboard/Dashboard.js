@@ -3,10 +3,10 @@ import './Dashboard.css';
 import Account from '../Account';
 import Sidebar from './Sidebar';
 
-const Dashboard = ({user}) => {
+const Dashboard = () => {
   return (
     <div className='dashboard'>
-      <Sidebar user={user} />
+      <Sidebar />
       <Account />
     </div>
   )

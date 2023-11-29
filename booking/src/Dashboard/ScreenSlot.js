@@ -2,24 +2,26 @@ import React, { useEffect, useState } from "react";
 import "./ScreenSlot.css";
 import Screens from "../Components/db/Data";
 import Sidebar from "./Sidebar";
-import Seat from "./Seat";
 
-
-
-const ScreenSlot = ({ user }) => {
+const ScreenSlot = () => {
   const [selectedScreens, setSelectedScreens] = useState(null)
   const [selectedMovie, setSelectedMovie] = useState(null)
 
   useEffect(() => {
     const storedMovie = localStorage.getItem('selectedMovie')
+    const storedScreen = localStorage.getItem('selectedScreen')
     if(storedMovie) {
       setSelectedMovie(JSON.parse(storedMovie))
+    }
+    if(storedScreen){
+      setSelectedScreens(JSON.parse(storedScreen))
     }
   }, [])
 
   const handleScreenSelect = (screen) => {
     if(screen?.id === selectedScreens?.id){
       setSelectedScreens(null)
+      localStorage.removeItem('selectedScreen')
       return
     } 
     localStorage.setItem("selectedScreen", JSON.stringify(screen))
@@ -29,13 +31,9 @@ const ScreenSlot = ({ user }) => {
   const movieName = selectedMovie?.title || "No movie selected";
 
   return (
-    <>
-    {selectedScreens ? (
-      <Seat selectedScreen={selectedScreens} movieName={movieName} user={user} />
-    ) : (
       <div className="screen">
       <div className="screen__sidebar">
-        <Sidebar user={user} />
+        <Sidebar />
       </div>
       <div className="screen__screenSlot">
       <h2>{movieName}</h2>
@@ -61,8 +59,6 @@ const ScreenSlot = ({ user }) => {
       </div>
     </div>
     </div>
-    )}
-    </>
     
   );
 };
