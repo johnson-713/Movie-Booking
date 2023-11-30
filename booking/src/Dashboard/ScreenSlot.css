@@ -30,6 +30,10 @@
     cursor: pointer;
 }
 
+.screenSlot__btns > button:hover {
+    background-color: rgb(55, 255, 0);
+}
+
 .btns.active {
     background-color: rgb(55, 255, 0);
 }

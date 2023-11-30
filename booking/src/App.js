@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from './Dashboard/Dashboard';
 import BookingModal from './Dashboard/BookingModal';
 import ScreenSlot from './Dashboard/ScreenSlot';
-import Seat from './Dashboard/Seat';
+import NewSeats from './Dashboard/NewSeats';
+// import Seat from './Dashboard/Seat';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route path='/movies' element={<MovieList />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/screen' element={<ScreenSlot />} />
-          <Route path='/seats' element={<Seat />} />
+          <Route path='/seats' element={<NewSeats />} />
           <Route path='/message' element={<BookingModal />} />
         </Routes>
       </Router>

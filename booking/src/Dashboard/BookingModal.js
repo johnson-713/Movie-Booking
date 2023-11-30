@@ -33,6 +33,9 @@ const BookingModal = () => {
     const delayTime = 5000;
 
     const timeoutId = setTimeout(() => {
+      localStorage.removeItem('selectedScreen')
+      localStorage.removeItem('selectedMovie')
+      localStorage.removeItem('selectedSeats')
       navigate("/movies");
     }, delayTime);
 
@@ -43,7 +46,7 @@ const BookingModal = () => {
   const screenTime = selectedScreen ? JSON.parse(selectedScreen).time : "";
   const price = selectedMovie ? JSON.parse(selectedMovie).price : ""
   const seats = selectedSeats ? JSON.parse(selectedSeats).length : "";
-  const numbers = selectedSeats ? JSON.parse(selectedSeats).map((index) => index + 1).join(", ") : ""
+  const numbers = selectedSeats ? JSON.parse(selectedSeats).join(", ") : ""
   
   return (
     <div className="modal__content">
@@ -55,6 +58,9 @@ const BookingModal = () => {
       <div className="modal__seats">
         <p>Price: {seats*price}</p>
         <p>Seats No: {numbers}</p>
+      </div>
+      <div>
+        <p>Total Seats: {seats}</p>
       </div>
       <h3>Successfully booked!</h3>
       <p> Booking information will be sent to your email.</p>

@@ -5,31 +5,25 @@ import "./Seat.css";
 import { useNavigate } from "react-router-dom";
 
 const Seat = () => {
-  const [selectedSeats, setSelectedSeats] = useState([]);
+  const storedSeats = localStorage.getItem("selectedSeats");
+   let initialValue;
+    if (storedSeats === null) {
+      initialValue = []
+    } else {
+      initialValue = JSON.parse(storedSeats);
+    }
+
+  const [selectedSeats, setSelectedSeats] = useState(initialValue);
   const [selectedScreen, setSelectedScreen] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [screens, setScreens] = useState(Screens);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const storedSelectedSeats = localStorage.getItem("selectedSeats");
-    if (storedSelectedSeats) {
-      setSelectedSeats(JSON.parse(storedSelectedSeats));
-    }
-  }, []);
 
   useEffect(() => {
-    localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
+    localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));  
+    console.log("selected seat:", selectedSeats) 
   }, [selectedSeats]);
-
-  // const handleSeatSelect = (index) => {
-  //   if (selectedSeats.includes(index)) {
-  //     setSelectedSeats(selectedSeats.filter((i) => i !== index));
-  //     return;
-  //   } else {
-  //     setSelectedSeats((seats) => [...seats, index]);
-  //   }
-  // };
 
   const handleSeatSelect = (index) => {
     setSelectedSeats((seats) => {
@@ -74,7 +68,6 @@ const Seat = () => {
 
       return updatedScreens;
     });
-    localStorage.removeItem('selectedScreen')
     navigate('/message')
     // setSelectedSeats([selectedSeats])
     // console.log(selectedSeats)

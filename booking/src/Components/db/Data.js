@@ -173,47 +173,110 @@ const Screens = [
     {
         id: 1,
         time: "9.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
+        seats: [
+            {
+                id: "S-01",
+                name: "A1",
+                booked: false,
+            },
+            {
+                id: "S-02",
+                name: "A2",
+                booked: false,
+            },
+            {
+                id: "S-03",
+                name: "A3",
+                booked: false,
+            },
+            {
+                id: "S-04",
+                name: "A4",
+                booked: false,
+            },
+            {
+                id: "S-05",
+                name: "A5",
+                booked: false,
+            },
+            {
+                id: "S-06",
+                name: "A6",
+                booked: false,
+            },
+        ],
     },
     {
         id: 2,
         time: "10.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
+        seats: [
+            {
+                id: "T-01",
+                name: "B1",
+                booked: false,
+            },
+            {
+                id: "T-02",
+                name: "B2",
+                booked: false,
+            },
+            {
+                id: "T-03",
+                name: "B3",
+                booked: false,
+            },
+            {
+                id: "T-04",
+                name: "B4",
+                booked: false,
+            },
+            {
+                id: "T-05",
+                name: "B5",
+                booked: false,
+            },
+            {
+                id: "T-06",
+                name: "B6",
+                booked: false,
+            },
+        ],
     },
     {
         id: 3,
         time: "11.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 4,
-        time: "12.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 5,
-        time: "1.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 6,
-        time: "2.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 7,
-        time: "3.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 8,
-        time: "4.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
-    },
-    {
-        id: 9,
-        time: "5.30 AM",
-        seats: [1, 1, 1, 1, 1, 1, 1, 1, 1],
+        seats: [
+            {
+                id: "U-01",
+                name: "C1",
+                booked: false,
+            },
+            {
+                id: "U-02",
+                name: "C2",
+                booked: false,
+            },
+            {
+                id: "U-03",
+                name: "C3",
+                booked: false,
+            },
+            {
+                id: "U-04",
+                name: "C4",
+                booked: false,
+            },
+            {
+                id: "U-05",
+                name: "C5",
+                booked: false,
+            },
+            {
+                id: "U-06",
+                name: "C6",
+                booked: false,
+            },
+        ],
     },
 ]
 
