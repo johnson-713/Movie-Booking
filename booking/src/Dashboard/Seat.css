@@ -38,7 +38,7 @@
     background-color: rgb(55, 255, 0);
 }
 
-.seat:not(.available) {
+.seat.unavailable {
     background-color: rgb(246, 109, 5);
     cursor: not-allowed;
 }

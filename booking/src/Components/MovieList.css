@@ -32,7 +32,7 @@
 .movieList__selection {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {

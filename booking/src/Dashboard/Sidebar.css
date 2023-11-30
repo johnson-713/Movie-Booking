@@ -20,6 +20,7 @@
     background-color: #FFF;
     border: 1px solid #000;
     width: 80%;
+    cursor: pointer;
 }
 
 .sidebar > button:hover {

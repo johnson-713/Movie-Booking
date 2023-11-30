@@ -12,27 +12,33 @@ const Seat = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const storedSelectedSeats = localStorage.getItem('selectedSeats');
+    const storedSelectedSeats = localStorage.getItem("selectedSeats");
     if (storedSelectedSeats) {
-        setSelectedSeats(JSON.parse(storedSelectedSeats));
+      setSelectedSeats(JSON.parse(storedSelectedSeats));
     }
-}, []);
+  }, []);
 
-useEffect(() => {
-    localStorage.setItem('selectedSeats', JSON.stringify(selectedSeats));
-}, [selectedSeats]);
+  useEffect(() => {
+    localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
+  }, [selectedSeats]);
+
+  // const handleSeatSelect = (index) => {
+  //   if (selectedSeats.includes(index)) {
+  //     setSelectedSeats(selectedSeats.filter((i) => i !== index));
+  //     return;
+  //   } else {
+  //     setSelectedSeats((seats) => [...seats, index]);
+  //   }
+  // };
 
   const handleSeatSelect = (index) => {
-    if (selectedSeats.includes(index)) {
-      setSelectedSeats(selectedSeats.filter((i) => i !== index));
-      return;
-    } else {
-      setSelectedSeats((seats) => [...seats, index]);
-    }
-  };
-
-  const isSeatBooked = (index) => {
-    return screens[selectedScreen]?.seats[index] === 0;
+    setSelectedSeats((seats) => {
+      if (seats.includes(index)) {
+        return seats.filter((i) => i !== index);
+      } else {
+        return seats.concat(index);
+      }
+    });
   };
 
   useEffect(() => {
@@ -48,7 +54,6 @@ useEffect(() => {
   }, []);
 
   const handleBook = () => {
-
     setScreens((prevScreens) => {
       const updatedScreens = [...prevScreens];
       const selectedScreenIndex = updatedScreens.findIndex(
@@ -59,6 +64,8 @@ useEffect(() => {
         const updatedSeats = [...updatedScreens[selectedScreenIndex].seats];
         selectedSeats.forEach((seat) => (updatedSeats[seat] = 0));
 
+        console.log(updatedSeats);
+
         updatedScreens[selectedScreenIndex] = {
           ...updatedScreens[selectedScreenIndex],
           seats: updatedSeats,
@@ -67,12 +74,19 @@ useEffect(() => {
 
       return updatedScreens;
     });
+    localStorage.removeItem('selectedScreen')
     navigate('/message')
-    //   setSelectedSeats([])
+    // setSelectedSeats([selectedSeats])
+    // console.log(selectedSeats)
+  };
+
+  const isSeatBooked = (index) => {
+    return screens[selectedScreen]?.seats[index] === 0;
   };
 
   const movieName = selectedMovie ? JSON.parse(selectedMovie).title : "";
   const screenTime = selectedScreen ? JSON.parse(selectedScreen).time : "";
+  const price = selectedMovie ? JSON.parse(selectedMovie).price : ""
 
   return (
     <div className="seatsPage">
@@ -84,7 +98,7 @@ useEffect(() => {
           {Screens.map((screen, index) => {
             const isSeatAvailable = screen.seats[index] === 1;
             const isCurrentlySelected = selectedSeats.includes(index);
-            const isCurrentlyBooked = isSeatBooked(index);
+            // const isCurrentlyBooked = isSeatBooked(index);
 
             return (
               <button
@@ -92,14 +106,14 @@ useEffect(() => {
                 className={`seat ${
                   isSeatAvailable ? "available" : "unavailable"
                 } 
-                                    ${isCurrentlySelected ? "selected" : ""}
-                                    ${isCurrentlyBooked ? "booked" : ""}`}
+                ${isCurrentlySelected ? "selected" : ""}
+                ${isSeatBooked(index) ? "booked" : ""}`}
                 onClick={() => {
-                  if (isSeatAvailable && !isCurrentlyBooked) {
+                  if (isSeatAvailable && !isSeatBooked(index)) {
                     handleSeatSelect(index);
                   }
                 }}
-                disabled={isCurrentlyBooked}
+                disabled={isSeatBooked(index)}
               >
                 {index + 1}
               </button>
@@ -122,7 +136,7 @@ useEffect(() => {
                   Selected seats:{" "}
                   {selectedSeats.map((index) => index + 1).join(", ")}
                 </p>
-                <p>Total seats: {selectedSeats?.length}</p>
+                <p>Price: {(selectedSeats?.length)*price}</p>
               </div>
             )}
           </div>

@@ -1,36 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './MovieList.css';
 import MovieCard from './MovieCard';
 import {Movies} from './db/Data';
-import ScreenSlot from '../Dashboard/ScreenSlot';
+import { useNavigate } from 'react-router-dom';
 
 
 const MovieList = () => {
-    const [selectedMovie, setSelectedMovie] = useState(null);
-    const [user, setUser] = useState(null);
+    const navigate = useNavigate();
 
-useEffect(() => {
-    const username = localStorage.getItem("username")
-    const password = localStorage.getItem("password")
-
-    if(username && password){
-        setUser({username, password})
-    }
-}, [selectedMovie])
 
 const handleClick = (movie) => {
   localStorage.setItem("selectedMovie", JSON.stringify(movie))
-  setSelectedMovie(movie)
+  navigate('/screen')
 }
 
   return (
-    <>
-    {selectedMovie ? (
-        <>
-        <ScreenSlot user={user} movieName={selectedMovie} />
-        </>
-    ) : (
-        <div className='movieList'>
+
+      <div className='movieList'>
         <div className='movieList__nav'>
           <div className='movieList__nav--description'>
               <p id='tag'>Tagline</p>
@@ -53,8 +39,7 @@ const handleClick = (movie) => {
               ))}
         </div>
       </div>
-    )}
-    </>
+
   )
 }
 

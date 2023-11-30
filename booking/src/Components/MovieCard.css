@@ -1,15 +1,17 @@
 .movieCard {
     display: flex;
     max-width: 440px;
+    cursor: pointer;
     flex-direction: column;
     margin: 0 auto;
 }
 
 .movieCard > img {
     object-fit: cover;
-    width: 100%;
-    max-height: 350px;
+    max-width: 250px;
+    max-height: 300px;
     cursor: pointer;
+    width: 100%;
 }
 
 .movieCard__text {
