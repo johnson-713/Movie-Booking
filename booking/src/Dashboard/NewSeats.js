@@ -19,15 +19,16 @@ const NewSeats = () => {
 
   useEffect(() => {
     localStorage.setItem("selectedSeats", JSON.stringify(selectedSeats));
-    console.log("selected seat:", selectedSeats);
   }, [selectedSeats]);
 
-  const handleSeatSelect = (index) => {
+  const handleSeatSelect = (selectedSeat) => {
       setSelectedSeats((seats) => {
-        if (seats.includes(index)) {
-          return seats.filter((i) => i !== index);
+        const seatIndex = seats.findIndex((seat) => seat.id === selectedSeat.id)
+
+        if(seatIndex !== -1){
+          return [...seats.slice(0, seatIndex), ...seats.slice(seatIndex+1)]
         } else {
-          return seats.concat(index);
+          return [...seats, selectedSeat]
         }
       });
   };
@@ -64,7 +65,7 @@ const NewSeats = () => {
             <div key={screen.id}>
               {screen.seats.map((seat, seatIndex) => {
                 const isSeatAvailable = !seat.booked;
-                const isCurrentlySelected = selectedSeats.includes(`${seat.id}`);
+                const isCurrentlySelected = selectedSeats.some((selectedSeat) => selectedSeat.id === seat.id);
                 return (
                   <button
                     key={seatIndex}
@@ -72,7 +73,7 @@ const NewSeats = () => {
                     disabled={seat.booked}
                     onClick={() => {
                       if (isSeatAvailable) {
-                        handleSeatSelect(`${seat.id}`);
+                        handleSeatSelect(seat);
                       }
                     }}
                   >
@@ -98,7 +99,7 @@ const NewSeats = () => {
               <div className="selected__seats">
                 <p>
                   Selected seats:{" "}
-                  {selectedSeats.join(", ")}
+                  {selectedSeats.map((selectedSeat) => selectedSeat.name).join(", ")}
                 </p>
                 <p>Price: {selectedSeats?.length * price}</p>
                 <p>Total Seats: {selectedSeats?.length}</p>

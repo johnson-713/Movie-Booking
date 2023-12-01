@@ -1,5 +1,7 @@
 .screen {
     display: flex;
+    background: url("https://img.freepik.com/premium-vector/abstract-smooth-blur-purple-gradient-background-website-banner-paper-card-decorative-design_120819-485.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .screen__sidebar {
@@ -13,7 +15,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    border-left: 2px solid #000;
+    border-left: 2px solid #fff;
 }
 
 .screenSlot__btns {
@@ -24,27 +26,39 @@
 }
 
 .screenSlot__btns > button {
-    width: 100px;
+    width: 150px;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 
 .screenSlot__btns > button:hover {
-    background-color: rgb(55, 255, 0);
+    background-position: right center; 
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    text-decoration: none;
 }
 
 .btns.active {
-    background-color: rgb(55, 255, 0);
+    background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
 
 .screenSlot__text {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 10px;
     margin-right: 330px;
     margin-bottom: 200px;
+    color: #eee;
 }
 
 

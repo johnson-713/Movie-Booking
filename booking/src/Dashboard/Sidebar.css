@@ -10,6 +10,7 @@
 #title {
     margin-right: 80px;
     font-size: 20px;
+    color: #FFF;
 }
 
 .sidebar > button {
@@ -24,13 +25,21 @@
 }
 
 .sidebar > button:hover {
-    background-color: #000;
-    color: #FFF;
+    background-position: right center; 
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
+    text-decoration: none;
 }
 
 .sidebar > button.active {
-    background-color: #000;
-    color: #FFF;
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {

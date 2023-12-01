@@ -11,7 +11,12 @@
     max-width: 250px;
     max-height: 300px;
     cursor: pointer;
-    width: 100%;
+    width: 15rem;
+    border-radius: 15px;
+}
+
+.movieCard > img:hover {
+    transform: scale(0.9);
 }
 
 .movieCard__text {

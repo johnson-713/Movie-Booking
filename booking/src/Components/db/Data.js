@@ -284,6 +284,42 @@ const Screens = [
             },
         ],
     },
+    {
+        id: 4,
+        time: "12.30 AM",
+        seats: [
+            {
+                id: "V-01",
+                name: "D1",
+                booked: false,
+            },
+            {
+                id: "V-02",
+                name: "D2",
+                booked: false,
+            },
+            {
+                id: "V-03",
+                name: "D3",
+                booked: false,
+            },
+            {
+                id: "V-04",
+                name: "D4",
+                booked: false,
+            },
+            {
+                id: "V-05",
+                name: "D5",
+                booked: false,
+            },
+            {
+                id: "V-06",
+                name: "D6",
+                booked: false,
+            },
+        ],
+    },
 ]
 
 export default Screens;
