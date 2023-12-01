@@ -1,55 +1,74 @@
 .signUpScreen {
-    max-width: 480px;
-    margin: 0 auto;
     display: flex;
+    align-items: center;
+    height: 100vh;
+    background: url("https://mediahub.ppds.com/link/18236-Header-image.jpg/1400") center no-repeat;
+    background-size: cover;
+}
+
+.signUpScreen__signUp {
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    max-height: 500px;
+    max-width: 480px;
+    display: flex;
+    color: #ff0000;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.signUpScreen > form > h1 {
+.signUpScreen__signUp > form > h1 {
     text-align: center;
     font-weight: 700;
 }
 
-.signUpScreen > form > p {
+.signUpScreen__signUp > form > p {
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 30px;
 }
 
-.signUpScreen > form {
+.signUpScreen__signUp > form {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.signUpScreen > form > input {
+.signUpScreen__signUp > form > input {
     padding: 5px;
     outline-width: 0;
     height: 30px;
     margin-bottom: 16px;
     font-size: 16px;
-    width: 100%;
+    width: 300px;
     margin: 10px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.signUpScreen > form > button {
+.signUpScreen__signUp > form > button {
     color: #FFF;
-    background-color: #000;
+    background-color: #ff0000;
     height: 48px;
     border-radius: 19px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 250px;
     margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {
-    .signUpScreen > form > input,
-    .signUpScreen > form > button {
+    .signUpScreen__signUp > form > input,
+    .signUpScreen__signUp > form > button {
         width: 90%;
     }
 }

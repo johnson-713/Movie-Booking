@@ -20,9 +20,10 @@ const SignupScreen = () => {
   };
   return (
     <div className="signUpScreen">
+      <div className="signUpScreen__signUp">
       <form onSubmit={handleSubmit}>
         <h1>Sign Up</h1>
-        <p>Lorem ipsum dolor sit amet adipiscing elit.</p>
+        <p>Let's Book some tickets to Enjoy!!!</p>
         <input
           type="text"
           id="username"
@@ -41,6 +42,7 @@ const SignupScreen = () => {
         />
         <button type="submit">Sign Up</button>
       </form>
+      </div>
     </div>
   );
 };

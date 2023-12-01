@@ -38,19 +38,18 @@
     background-color: rgb(55, 255, 0);
 }
 
-.seat.unavailable {
-    background-color: rgb(246, 109, 5);
-    cursor: not-allowed;
-}
 
 .booking__summary {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
 }
 
 .booking__summary > button {
     cursor: pointer;
+    width: 50%;
     border-radius: 10px;
     border: none;
 }

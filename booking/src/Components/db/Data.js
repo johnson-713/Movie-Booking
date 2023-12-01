@@ -5,6 +5,12 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/7/75/Leo_%282023_Indian_film%29.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "A-1",
+                name: "INOX : LUXE",
+            }
+        ]
     },
     {
         id: 2,
