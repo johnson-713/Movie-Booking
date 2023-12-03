@@ -96,7 +96,7 @@ const NewSeats = () => {
                   Selected seats:{" "}
                   {selectedSeats.map((selectedSeat) => selectedSeat.name).join(", ")}
                 </p>
-                <p>Price: {selectedSeats.length * (selectedSeats.map((seat) => seat.price))}</p>
+                <p>Price: {selectedSeats.reduce((acc, seat) => acc + (seat.price || 0), 0)}</p>
                 <p>Total Seats: {selectedSeats.length}</p>
               </div>
             )}
