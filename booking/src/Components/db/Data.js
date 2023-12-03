@@ -7,9 +7,47 @@ export const Movies = [
         language: "Tamil",
         theatres: [
             {
-                id: "A-1",
+                id: "Th-1",
                 name: "INOX : LUXE",
-            }
+                screens: [
+                    {
+                        id: "sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "se-01",
+                                name: "A1",
+                                booked: "false",
+                                price: 200,
+                            },
+                            {
+                                id: "se-02",
+                                name: "A2",
+                                booked: "false",
+                                price: 200,
+                            },
+                            {
+                                id: "se-03",
+                                name: "A3",
+                                booked: "false",
+                                price: 200,
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+            },
         ]
     },
     {
