@@ -18,16 +18,18 @@
     border-left: 2px solid #fff;
 }
 
-.seatsPage__seatGrid {
+.seatsPage__seatGrid > div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .seat {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-color: lightgray;
-    margin-right: 15px;
     cursor: pointer;
     border: none;
 }

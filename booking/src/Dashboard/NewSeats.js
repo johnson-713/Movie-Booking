@@ -37,11 +37,11 @@ const NewSeats = () => {
     const storedMovie = localStorage.getItem("selectedMovie");
     const storedScreen = localStorage.getItem("selectedScreen");
     if (storedMovie) {
-      setSelectedMovie(storedMovie);
+      setSelectedMovie(JSON.parse(storedMovie));
     }
 
     if (storedScreen) {
-      setSelectedScreen(storedScreen);
+      setSelectedScreen(JSON.parse(storedScreen));
     }
   }, []);
 
@@ -49,10 +49,6 @@ const NewSeats = () => {
     navigate("/message");
   };
 
-  const movieName = selectedMovie ? JSON.parse(selectedMovie).title : "";
-  const screenTime = selectedScreen ? JSON.parse(selectedScreen).time : "";
-  const price = selectedMovie ? JSON.parse(selectedMovie).price : "";
-  const screen = selectedScreen ? JSON.parse(selectedScreen) : "";
 
   return (
     <div className="seatsPage">
@@ -62,23 +58,22 @@ const NewSeats = () => {
       <div className="seatsPage__main">
         <div className="seatsPage__seatGrid">
         {selectedScreen && (
-            <div key={screen.id}>
-              {screen.seats.map((seat, seatIndex) => {
-                const isSeatAvailable = !seat.booked;
-                const isCurrentlySelected = selectedSeats.some((selectedSeat) => selectedSeat.id === seat.id);
+            <div key={selectedScreen.id}>
+              {selectedScreen.seats.map((seat) => {
                 return (
-                  <button
-                    key={seatIndex}
-                    className={`seat ${isCurrentlySelected ? "selected" : ""}`}
+                  <div key={seat.id}>
+                    <button
+                    className={`seat ${selectedSeats.some((s) => s.id === seat.id) ? "selected" : ""}`}
                     disabled={seat.booked}
                     onClick={() => {
-                      if (isSeatAvailable) {
+                      if (!seat.booked) {
                         handleSeatSelect(seat);
                       }
                     }}
                   >
                     {seat.name}
                   </button>
+                  </div>
                 );
               })}
             </div>
@@ -89,26 +84,26 @@ const NewSeats = () => {
           <div>
             {selectedScreen && selectedMovie && (
               <div className="selected__screen">
-                <p>Time: {screenTime}</p>
-                <p>Movie: {movieName}</p>
+                <p>Time: {selectedScreen.time}</p>
+                <p>Movie: {selectedMovie.title}</p>
               </div>
             )}
           </div>
           <div>
-            {selectedSeats && selectedSeats?.length > 0 && (
+            {selectedSeats?.length > 0 && (
               <div className="selected__seats">
                 <p>
                   Selected seats:{" "}
                   {selectedSeats.map((selectedSeat) => selectedSeat.name).join(", ")}
                 </p>
-                <p>Price: {selectedSeats?.length * price}</p>
-                <p>Total Seats: {selectedSeats?.length}</p>
+                <p>Price: {selectedSeats.length * (selectedSeats.map((seat) => seat.price))}</p>
+                <p>Total Seats: {selectedSeats.length}</p>
               </div>
             )}
           </div>
           <button
             onClick={handleBook}
-            disabled={!selectedScreen || selectedSeats?.length === 0}
+            disabled={!selectedScreen || selectedSeats.length === 0}
           >
             Book Now
           </button>

@@ -183,7 +183,7 @@ const Screens = [
             {
                 id: "S-01",
                 name: "A1",
-                booked: false,
+                booked: true,
             },
             {
                 id: "S-02",
@@ -193,7 +193,7 @@ const Screens = [
             {
                 id: "S-03",
                 name: "A3",
-                booked: false,
+                booked: true,
             },
             {
                 id: "S-04",
@@ -210,6 +210,86 @@ const Screens = [
                 name: "A6",
                 booked: false,
             },
+            {
+                id: "S-07",
+                name: "A7",
+                booked: true,
+            },
+            {
+                id: "S-08",
+                name: "A8",
+                booked: false,
+            },
+            {
+                id: "S-09",
+                name: "A9",
+                booked: true,
+            },
+            {
+                id: "S-10",
+                name: "A10",
+                booked: true,
+            },
+            {
+                id: "S-11",
+                name: "A11",
+                booked: false,
+            },
+            {
+                id: "S-12",
+                name: "A12",
+                booked: true,
+            },
+            {
+                id: "S-13",
+                name: "A13",
+                booked: true,
+            },
+            {
+                id: "S-14",
+                name: "A14",
+                booked: false,
+            },
+            {
+                id: "S-15",
+                name: "A15",
+                booked: true,
+            },
+            {
+                id: "S-16",
+                name: "A16",
+                booked: false,
+            },
+            {
+                id: "S-17",
+                name: "A17",
+                booked: false,
+            },
+            {
+                id: "S-18",
+                name: "A18",
+                booked: false,
+            },
+            {
+                id: "S-19",
+                name: "A19",
+                booked: true,
+            },
+            {
+                id: "S-20",
+                name: "A20",
+                booked: false,
+            },
+            {
+                id: "S-21",
+                name: "A21",
+                booked: true,
+            },
+            {
+                id: "S-22",
+                name: "A22",
+                booked: true,
+            },
         ],
     },
     {
@@ -224,7 +304,7 @@ const Screens = [
             {
                 id: "T-02",
                 name: "B2",
-                booked: false,
+                booked: true,
             },
             {
                 id: "T-03",
@@ -234,7 +314,7 @@ const Screens = [
             {
                 id: "T-04",
                 name: "B4",
-                booked: false,
+                booked: true,
             },
             {
                 id: "T-05",
@@ -244,6 +324,96 @@ const Screens = [
             {
                 id: "T-06",
                 name: "B6",
+                booked: false,
+            },
+            {
+                id: "T-07",
+                name: "B7",
+                booked: false,
+            },
+            {
+                id: "T-08",
+                name: "B8",
+                booked: true,
+            },
+            {
+                id: "T-09",
+                name: "B9",
+                booked: false,
+            },
+            {
+                id: "T-10",
+                name: "B10",
+                booked: true,
+            },
+            {
+                id: "T-11",
+                name: "B11",
+                booked: false,
+            },
+            {
+                id: "T-12",
+                name: "B12",
+                booked: false,
+            },
+            {
+                id: "T-13",
+                name: "B13",
+                booked: false,
+            },
+            {
+                id: "T-14",
+                name: "B14",
+                booked: true,
+            },
+            {
+                id: "T-15",
+                name: "B15",
+                booked: false,
+            },
+            {
+                id: "T-16",
+                name: "B16",
+                booked: true,
+            },
+            {
+                id: "T-17",
+                name: "B17",
+                booked: false,
+            },
+            {
+                id: "T-18",
+                name: "B18",
+                booked: false,
+            },
+            {
+                id: "T-19",
+                name: "B19",
+                booked: false,
+            },
+            {
+                id: "T-20",
+                name: "B20",
+                booked: true,
+            },
+            {
+                id: "T-21",
+                name: "B21",
+                booked: false,
+            },
+            {
+                id: "T-22",
+                name: "B22",
+                booked: true,
+            },
+            {
+                id: "T-23",
+                name: "B23",
+                booked: false,
+            },
+            {
+                id: "T-24",
+                name: "B24",
                 booked: false,
             },
         ],
@@ -260,7 +430,7 @@ const Screens = [
             {
                 id: "U-02",
                 name: "C2",
-                booked: false,
+                booked: true,
             },
             {
                 id: "U-03",
@@ -280,7 +450,97 @@ const Screens = [
             {
                 id: "U-06",
                 name: "C6",
+                booked: true,
+            },
+            {
+                id: "U-07",
+                name: "C7",
                 booked: false,
+            },
+            {
+                id: "U-08",
+                name: "C8",
+                booked: true,
+            },
+            {
+                id: "U-09",
+                name: "C9",
+                booked: false,
+            },
+            {
+                id: "U-10",
+                name: "C10",
+                booked: false,
+            },
+            {
+                id: "U-11",
+                name: "C11",
+                booked: false,
+            },
+            {
+                id: "U-12",
+                name: "C12",
+                booked: true,
+            },
+            {
+                id: "U-13",
+                name: "C13",
+                booked: false,
+            },
+            {
+                id: "U-14",
+                name: "C14",
+                booked: true,
+            },
+            {
+                id: "U-15",
+                name: "C15",
+                booked: false,
+            },
+            {
+                id: "U-16",
+                name: "C16",
+                booked: false,
+            },
+            {
+                id: "U-17",
+                name: "C17",
+                booked: false,
+            },
+            {
+                id: "U-18",
+                name: "C18",
+                booked: true,
+            },
+            {
+                id: "U-19",
+                name: "C19",
+                booked: false,
+            },
+            {
+                id: "U-20",
+                name: "C20",
+                booked: true,
+            },
+            {
+                id: "U-21",
+                name: "C21",
+                booked: false,
+            },
+            {
+                id: "U-22",
+                name: "C22",
+                booked: false,
+            },
+            {
+                id: "U-23",
+                name: "C23",
+                booked: false,
+            },
+            {
+                id: "U-24",
+                name: "C24",
+                booked: true,
             },
         ],
     },
@@ -292,31 +552,145 @@ const Screens = [
                 id: "V-01",
                 name: "D1",
                 booked: false,
+                price: 200,
             },
             {
                 id: "V-02",
                 name: "D2",
                 booked: false,
+                price: 200,
             },
             {
                 id: "V-03",
                 name: "D3",
-                booked: false,
+                booked: true,
+                price: 200,
             },
             {
                 id: "V-04",
                 name: "D4",
-                booked: false,
+                booked: true,
+                price: 200,
             },
             {
                 id: "V-05",
                 name: "D5",
                 booked: false,
+                price: 200,
             },
             {
                 id: "V-06",
                 name: "D6",
                 booked: false,
+                price: 200,
+            },
+            {
+                id: "V-07",
+                name: "D7",
+                booked: false,
+                price: 200,
+            },
+            {
+                id: "V-08",
+                name: "D8",
+                booked: false,
+                price: 200,
+            },
+            {
+                id: "V-09",
+                name: "D9",
+                booked: true,
+                price: 200,
+            },
+            {
+                id: "V-10",
+                name: "D10",
+                booked: true,
+                price: 200,
+            },
+            {
+                id: "V-11",
+                name: "D11",
+                booked: false,
+                price: 200,
+            },
+            {
+                id: "V-12",
+                name: "D12",
+                booked: false,
+                price: 200,
+            },
+            {
+                id: "V-13",
+                name: "D13",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-14",
+                name: "D14",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-15",
+                name: "D15",
+                booked: true,
+                price: 160,
+            },
+            {
+                id: "V-16",
+                name: "D16",
+                booked: true,
+                price: 160,
+            },
+            {
+                id: "V-17",
+                name: "D17",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-18",
+                name: "D18",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-19",
+                name: "D19",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-20",
+                name: "D20",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-21",
+                name: "D21",
+                booked: true,
+                price: 160,
+            },
+            {
+                id: "V-22",
+                name: "D22",
+                booked: true,
+                price: 160,
+            },
+            {
+                id: "V-23",
+                name: "D23",
+                booked: false,
+                price: 160,
+            },
+            {
+                id: "V-24",
+                name: "D24",
+                booked: false,
+                price: 160,
             },
         ],
     },
