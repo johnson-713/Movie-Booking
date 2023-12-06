@@ -15,6 +15,7 @@ const NewSeats = () => {
   const [selectedSeats, setSelectedSeats] = useState(initialValue);
   const [selectedScreen, setSelectedScreen] = useState(null);
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [selectedTheatre, setSelectedTheatre] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,20 +23,22 @@ const NewSeats = () => {
   }, [selectedSeats]);
 
   const handleSeatSelect = (selectedSeat) => {
-      setSelectedSeats((seats) => {
-        const seatIndex = seats.findIndex((seat) => seat.id === selectedSeat.id)
+    setSelectedSeats((seats) => {
+      const seatIndex = seats.findIndex((seat) => seat.id === selectedSeat.id);
 
-        if(seatIndex !== -1){
-          return [...seats.slice(0, seatIndex), ...seats.slice(seatIndex+1)]
-        } else {
-          return [...seats, selectedSeat]
-        }
-      });
+      if (seatIndex !== -1) {
+        return [...seats.slice(0, seatIndex), ...seats.slice(seatIndex + 1)];
+      } else {
+        return [...seats, selectedSeat];
+      }
+    });
   };
 
   useEffect(() => {
     const storedMovie = localStorage.getItem("selectedMovie");
     const storedScreen = localStorage.getItem("selectedScreen");
+    const storedTheatre = localStorage.getItem("selectedTheatre");
+   
     if (storedMovie) {
       setSelectedMovie(JSON.parse(storedMovie));
     }
@@ -43,12 +46,15 @@ const NewSeats = () => {
     if (storedScreen) {
       setSelectedScreen(JSON.parse(storedScreen));
     }
+    if (storedTheatre) {
+      setSelectedTheatre(JSON.parse(storedTheatre));
+    }
   }, []);
+
 
   const handleBook = () => {
     navigate("/message");
   };
-
 
   return (
     <div className="seatsPage">
@@ -57,33 +63,43 @@ const NewSeats = () => {
       </div>
       <div className="seatsPage__main">
         <div className="seatsPage__seatGrid">
-        {selectedScreen && (
-            <div key={selectedScreen.id}>
-              {selectedScreen.seats.map((seat) => {
-                return (
-                  <div key={seat.id}>
-                    <button
-                    className={`seat ${selectedSeats.some((s) => s.id === seat.id) ? "selected" : ""}`}
-                    disabled={seat.booked}
-                    onClick={() => {
-                      if (!seat.booked) {
-                        handleSeatSelect(seat);
-                      }
-                    }}
-                  >
-                    {seat.name}
-                  </button>
-                  </div>
-                );
-              })}
+          {selectedScreen && selectedScreen.seats && (
+            <div key={selectedScreen.id} className="seats__btns">
+              {selectedScreen.seats.map((row) => (
+                <div key={row.id}>
+                  {row && Object.entries(row).map(([rowName, seatGroup]) => (
+                    <div key={seatGroup.id}>
+                      {seatGroup.seat.map((s) => (
+                        <button
+                          key={s.id}
+                          className={`seat ${
+                            selectedSeats.some((sc) => sc.id === s.id)
+                              ? "selected"
+                              : ""
+                          }`}
+                          id={s.id}
+                          disabled={s.booked}
+                          onClick={() => {
+                            if (!s.booked) {
+                              handleSeatSelect(s);
+                            }
+                          }}
+                        >
+                          {s.name}
+                        </button>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           )}
-
         </div>
         <div className="booking__summary">
           <div>
             {selectedScreen && selectedMovie && (
               <div className="selected__screen">
+                <p>Theatre: {selectedTheatre.name}</p>
                 <p>Time: {selectedScreen.time}</p>
                 <p>Movie: {selectedMovie.title}</p>
               </div>
@@ -94,9 +110,17 @@ const NewSeats = () => {
               <div className="selected__seats">
                 <p>
                   Selected seats:{" "}
-                  {selectedSeats.map((selectedSeat) => selectedSeat.name).join(", ")}
+                  {selectedSeats
+                    .map((selectedSeat) => selectedSeat.name)
+                    .join(", ")}
                 </p>
-                <p>Price: {selectedSeats.reduce((acc, seat) => acc + (seat.price || 0), 0)}</p>
+                <p>
+                  Price:{" "}
+                  {selectedSeats.reduce(
+                    (acc, seat) => acc + ((seat.price* seat.percentage) || 0),
+                    0
+                  )}
+                </p>
                 <p>Total Seats: {selectedSeats.length}</p>
               </div>
             )}

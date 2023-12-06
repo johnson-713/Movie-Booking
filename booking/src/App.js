@@ -7,6 +7,7 @@ import Dashboard from './Dashboard/Dashboard';
 import BookingModal from './Dashboard/BookingModal';
 import ScreenSlot from './Dashboard/ScreenSlot';
 import NewSeats from './Dashboard/NewSeats';
+import TheatreList from './Dashboard/TheatreList';
 // import Seat from './Dashboard/Seat';
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/screen' element={<ScreenSlot />} />
           <Route path='/seats' element={<NewSeats />} />
           <Route path='/message' element={<BookingModal />} />
+          <Route path='/theatres' element={<TheatreList />} />
         </Routes>
       </Router>
     </div>

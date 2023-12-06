@@ -11,7 +11,7 @@ const MovieList = () => {
 
   const handleClick = (movie) => {
     localStorage.setItem("selectedMovie", JSON.stringify(movie));
-    navigate("/screen");
+    navigate("/theatres");
   };
 
   const handleViewAll = () => {

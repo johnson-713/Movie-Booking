@@ -11,42 +11,240 @@ export const Movies = [
                 name: "INOX : LUXE",
                 screens: [
                     {
-                        id: "sc-01",
+                        id: "Th-1-sc-01",
                         time: "9.00 AM",
                         seats: [
                             {
-                                id: "se-01",
+                                id: "Th-1-sc-01-se-01",
                                 name: "A1",
-                                booked: "false",
+                                booked: false,
                                 price: 200,
                             },
                             {
-                                id: "se-02",
+                                id: "Th-1-sc-01-se-02",
                                 name: "A2",
-                                booked: "false",
+                                booked: false,
                                 price: 200,
                             },
                             {
-                                id: "se-03",
+                                id: "Th-1-sc-01-se-03",
                                 name: "A3",
-                                booked: "false",
+                                booked: false,
                                 price: 200,
                             },
                         ]
-                    }
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
                 ]
             },
             {
                 id: "Th-2",
                 name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
             },
             {
                 id: "Th-3",
                 name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
             },
             {
                 id: "Th-4",
                 name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
             },
         ]
     },
@@ -56,6 +254,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/7/75/Kannur_Squad_poster.jpeg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "PVR : Ampa mall",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Rohini Silver Screens",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "PVR : Palazzo",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "AGS Cinemas, Villivakkam",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 3,
@@ -63,6 +503,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/4/4e/Jigarthanda_DoubleX.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "AGS Cinemas, T.Nagar",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "PVR : Sathyam",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "PVR : Perambur",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "PVR : Escape-Express",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 4,
@@ -70,6 +752,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/4/40/Mark_Antony_2023_poster.jpg",
         price: 150,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Kasi  Talkies",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 5,
@@ -77,6 +1001,281 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/0/09/Irugapatru.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "Green Cinemas",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: true,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: true,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "PVR : Theyagaraja",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-01-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
+                            },
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-01-se-01-B1",
+                                        name: "B1",
+                                        price: 160,
+                                        percentage: 0.8,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.8,
+                                        price: 160,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-03-B3",
+                                        name: "B3",
+                                        price: 160,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
+                            }
+                    }]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 6,
@@ -84,6 +1283,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/c/cb/Jailer_2023_Tamil_film_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 7,
@@ -91,6 +1532,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/c/c2/Ghost_Kannada_Film.jpg",
         price: 150,
         language: "Kannada",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 8,
@@ -98,6 +1781,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/b/be/RDX-_Robert_Dony_Xavier_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 9,
@@ -105,6 +2030,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/7/79/Kaithi_2019_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 10,
@@ -112,6 +2279,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 11,
@@ -119,6 +2528,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 12,
@@ -126,6 +2777,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 13,
@@ -133,6 +3026,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 14,
@@ -140,6 +3275,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/3/3d/Beast_2022_Indian_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 15,
@@ -147,6 +3524,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/7/78/Asuran_2019_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 16,
@@ -154,6 +3773,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 17,
@@ -161,6 +4022,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/d/d0/John_Wick_-_Chapter_4_promotional_poster.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 18,
@@ -168,6 +4271,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/6/65/Thunivu_poster.jpg",
         price: 180,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 19,
@@ -175,6 +4520,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/7/7a/The_Marvels_poster.jpg",
         price: 200,
         language: "English",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 20,
@@ -182,6 +4769,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/9/93/Vikram_2022_poster.jpg",
         price: 120,
         language: "Tamil",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 21,
@@ -189,6 +5018,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/b/bf/Khufiya_poster.jpg",
         price: 160,
         language: "Hindi",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 22,
@@ -196,6 +5267,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/5/56/OMG_2_%E2%80%93_Oh_My_God%21_2_poster.jpg",
         price: 180,
         language: "Hindi",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 23,
@@ -203,6 +5516,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/d/d5/Trance_film_poster.jpg",
         price: 150,
         language: "Telugu",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
     {
         id: 24,
@@ -210,6 +5765,248 @@ export const Movies = [
         image: "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
         price: 150,
         language: "Telugu",
+        theatres: [
+            {
+                id: "Th-1",
+                name: "INOX : LUXE",
+                screens: [
+                    {
+                        id: "Th-1-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-1-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-1-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-1-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-2",
+                name: "Cinepolis",
+                screens: [
+                    {
+                        id: "Th-2-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-2-sc-03",
+                        time: "11.00 AM",
+                        seats: [
+                            {
+                                id: "Th-2-sc-03-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-02",
+                                name: "A2",
+                                booked: true,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-2-sc-03-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-3",
+                name: "Raj Theatre",
+                screens: [
+                    {
+                        id: "Th-3-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-3-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-3-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-3-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: "Th-4",
+                name: "Cine Bings",
+                screens: [
+                    {
+                        id: "Th-4-sc-01",
+                        time: "9.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-01-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-01-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                    {
+                        id: "Th-4-sc-02",
+                        time: "10.00 AM",
+                        seats: [
+                            {
+                                id: "Th-4-sc-02-se-01",
+                                name: "A1",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-02",
+                                name: "A2",
+                                booked: false,
+                                price: 200,
+                            },
+                            {
+                                id: "Th-4-sc-02-se-03",
+                                name: "A3",
+                                booked: false,
+                                price: 200,
+                            },
+                        ]
+                    },
+                ]
+            },
+        ]
     },
 ]
 

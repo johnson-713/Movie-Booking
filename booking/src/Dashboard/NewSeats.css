@@ -23,15 +23,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 }
+
 
 .seat {
     width: 70px;
     height: 70px;
+    gap: 20px;
     background-color: lightgray;
     cursor: pointer;
     border: none;
+    margin: 10px;
 }
 
 .seat:hover {

@@ -15,7 +15,7 @@ const Sidebar = () => {
   }, [])
 
   const handleTiming = () => {
-    navigate('/screen');
+    navigate('/theatres');
   }
 
   const handleAccount = () => {
@@ -29,7 +29,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       <h3 id='title'>Hi, {user}</h3>
       <button className={location.pathname === '/dashboard' ? 'active' : ''} onClick={handleAccount}>Account</button>
-      <button className={location.pathname === '/screen' ? 'active' : ''} onClick={handleTiming}>Timing</button>
+      <button className={location.pathname === '/theatres' ? 'active' : ''} onClick={handleTiming}>Theatres</button>
       <button className={location.pathname === '/seats' ? 'active' : ''} onClick={handleSeats}>Seats</button>
       <div style={{ borderTop: "2px solid white",width: '80%'}}></div>
     </div>
