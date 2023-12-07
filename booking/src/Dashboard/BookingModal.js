@@ -6,6 +6,7 @@ const BookingModal = () => {
   const navigate = useNavigate();
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [selectedSeats, setSelectedSeats] = useState(null);
+  const [selectedTheatre, setSelectedTheatre] = useState(null)
   const [selectedScreen, setSelectedScreen] = useState(null);
   const [user, setUser] = useState(null);
 
@@ -13,6 +14,7 @@ const BookingModal = () => {
     const storedMovie = localStorage.getItem("selectedMovie");
     const storedScreen = localStorage.getItem("selectedScreen");
     const storedSeats = localStorage.getItem("selectedSeats");
+    const storedTheatre = localStorage.getItem('selectedTheatre')
     const storedUser = localStorage.getItem("username");
     if (storedUser) {
       setUser(storedUser);
@@ -27,6 +29,9 @@ const BookingModal = () => {
     if (storedScreen) {
       setSelectedScreen(storedScreen);
     }
+    if(storedTheatre){
+      setSelectedTheatre(storedTheatre)
+    }
   }, []);
 
   useEffect(() => {
@@ -36,6 +41,7 @@ const BookingModal = () => {
       localStorage.removeItem("selectedScreen");
       localStorage.removeItem("selectedMovie");
       localStorage.removeItem("selectedSeats");
+      localStorage.removeItem('selectedTheatre')
       navigate("/movies");
     }, delayTime);
 
@@ -43,6 +49,7 @@ const BookingModal = () => {
   }, [navigate]);
 
   const movieName = selectedMovie ? JSON.parse(selectedMovie).title : "";
+  const theatre = selectedTheatre ? JSON.parse(selectedTheatre).name : ""
   const screenTime = selectedScreen ? JSON.parse(selectedScreen).time : "";
   const price = selectedMovie ? JSON.parse(selectedMovie).price : "";
   const seats = selectedSeats ? JSON.parse(selectedSeats).length : "";
@@ -59,6 +66,9 @@ const BookingModal = () => {
       <div className="modal__title">
         <p>Movie: {movieName}</p>
         <p>Show Time: {screenTime}</p>
+      </div>
+      <div>
+      <p>Theatre: {theatre}</p>
       </div>
       <div className="modal__seats">
         <p>Price: {seats * price}</p>

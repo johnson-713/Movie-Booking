@@ -21,7 +21,7 @@
 
 .movieList__nav--search > input {
   height: 100%;
-  width: 300px;
+  max-width: 300px;
   border-radius: 10px;
   background-color: #fafafa;
   border: none;
@@ -74,7 +74,7 @@
   padding-bottom: 40px;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 450px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .movieList__nav--btns {
     margin-top: 60px;
   }
@@ -91,5 +91,32 @@
 
   .movieList__selection {
     gap: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .movieList__nav--btns {
+    margin-top: 50px;
+  }
+
+  .movieList__nav > button {
+    width: 50px;
+    height: 36px;
+  }
+
+  #tag,
+  #desc {
+    font-size: 6px;
+  }
+
+  .movieList__selection {
+    gap: 10px;
+  }
+  .movieList__nav--search > input {
+    margin: 20px 20px;
+  }
+
+  .movieList__nav {
+    padding: 10px 20px;
   }
 }

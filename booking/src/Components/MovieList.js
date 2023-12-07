@@ -53,7 +53,7 @@ const MovieList = () => {
               price={movie.price}
             />
           </div>
-        )).slice(0, showAllMovies ? Movies.length : 10)}
+        )).slice(0, showAllMovies ? Movies.length : 4)}
       </div>
     </div>
   );

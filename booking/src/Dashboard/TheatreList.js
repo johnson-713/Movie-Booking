@@ -44,13 +44,12 @@ const TheatreList = () => {
         <h2>{selectedMovie?.title}</h2>
       {selectedMovie && (selectedMovie.theatres.map((theatre) => {
         return (
-            <>
             <div key={theatre.id} className='theatres__details'>
                 <div>
                    <h3>{theatre.name}</h3>
                 </div>
                 <div className='theatres__details--btns'> 
-                {selectedTheatre &&
+                {selectedMovie && 
                     theatre.screens.map((screen) => {
                         return (
                             <button 
@@ -64,8 +63,6 @@ const TheatreList = () => {
                 }
                 </div>
             </div>
-            <div style={{ borderTop: "2px solid white",width: '100%'}} className='theatres__partition' key={`${theatre.id}-partition`}></div>
-            </>
         )
       }))}
       </div>

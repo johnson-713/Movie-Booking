@@ -4,7 +4,7 @@
     background-size: cover;
 }
 
-.theatres__siedbar {
+.theatres__sidebar {
     flex: 0.2;
 }
 
@@ -26,10 +26,6 @@
     align-items: center;
 }
 
-/* .theatres__details > div > h3 {
-    margin-right: 50px;
-} */
-
 .theatres__details--btns {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +33,7 @@
 }
 
 .theatres__details--btns > button {
-    width: 150px;
+    max-width: 150px;
     height: 40px;
     gap: 10px;
     cursor: pointer;
@@ -48,9 +44,6 @@
     background-position: right center;
 }
 
-.theatres__partition {
-    margin-left: 200px;
-}
 
 .btns.active {
     background-image: linear-gradient(to right, #348F50 0%, #56B4D3  51%, #348F50  100%);
@@ -63,4 +56,13 @@
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+}
+
+@media screen and (min-width: 767px) {
+    .theatres__details {
+        font-size: 14px;
+    }
+
+
+
 }

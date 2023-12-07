@@ -11,6 +11,7 @@ const Account = () => {
     localStorage.removeItem('selectedSeats')
     localStorage.removeItem('selectedScreen')
     localStorage.removeItem('selectedMovie')
+    localStorage.removeItem('selectedTheatre')
     navigate('/');
   }
   return (
