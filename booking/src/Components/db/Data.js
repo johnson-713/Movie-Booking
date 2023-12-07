@@ -916,26 +916,85 @@ export const Movies = [
                     {
                         id: "Th-3-sc-02",
                         time: "10.00 AM",
-                        seats: [
-                            {
-                                id: "Th-3-sc-02-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-3-sc-02-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-3-sc-02-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-3-sc-02-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-3-sc-02-se-03",
-                                name: "A3",
-                                booked: false,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-3-sc-02-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-3-sc-02-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                 ]
             },
@@ -946,50 +1005,168 @@ export const Movies = [
                     {
                         id: "Th-4-sc-01",
                         time: "9.00 AM",
-                        seats: [
-                            {
-                                id: "Th-4-sc-01-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-01-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-4-sc-01-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-01-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-4-sc-01-se-03",
-                                name: "A3",
-                                booked: false,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-01-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-4-sc-01-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                     {
                         id: "Th-4-sc-02",
                         time: "10.00 AM",
-                        seats: [
-                            {
-                                id: "Th-4-sc-02-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-02-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-4-sc-02-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-02-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-4-sc-02-se-03",
-                                name: "A3",
-                                booked: false,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-4-sc-02-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-4-sc-02-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                 ]
             },
@@ -1009,50 +1186,168 @@ export const Movies = [
                     {
                         id: "Th-1-sc-01",
                         time: "9.00 AM",
-                        seats: [
-                            {
-                                id: "Th-1-sc-01-se-01",
-                                name: "A1",
-                                booked: true,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-01-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-1-sc-01-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-01-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-1-sc-01-se-03",
-                                name: "A3",
-                                booked: true,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-01-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-1-sc-01-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                     {
                         id: "Th-1-sc-02",
                         time: "10.00 AM",
-                        seats: [
-                            {
-                                id: "Th-1-sc-02-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-02-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-1-sc-02-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-02-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-1-sc-02-se-03",
-                                name: "A3",
-                                booked: true,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-1-sc-02-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-1-sc-02-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                 ]
             },
@@ -1095,23 +1390,49 @@ export const Movies = [
                                     {
                                         id: "Th-2-sc-01-se-01-B1",
                                         name: "B1",
-                                        price: 160,
-                                        percentage: 0.8,
+                                        price: 200,
+                                        percentage: 0.6,
                                         booked: true,
                                     },
                                     {
                                         id: "Th-2-sc-01-se-02-B2",
                                         name: "B2",
-                                        percentage: 0.8,
-                                        price: 160,
+                                        percentage: 0.6,
+                                        price: 200,
                                         booked: false,
                                     },
                                     {
                                         id: "Th-2-sc-01-se-03-B3",
                                         name: "B3",
-                                        price: 160,
+                                        price: 200,
                                         booked: false,
-                                        percentage: 0.8,
+                                        percentage: 0.6,
+                                    },
+                                ]
+                            },
+                            "C" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-01-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-01-se-03-C3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
                                     },
                                 ]
                             }
@@ -1120,50 +1441,168 @@ export const Movies = [
                     {
                         id: "Th-2-sc-02",
                         time: "10.00 AM",
-                        seats: [
-                            {
-                                id: "Th-2-sc-02-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-02-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-2-sc-02-se-02",
-                                name: "A2",
-                                booked: false,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-02-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-2-sc-02-se-03",
-                                name: "A3",
-                                booked: false,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-02-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-02-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                     {
                         id: "Th-2-sc-03",
                         time: "11.00 AM",
-                        seats: [
-                            {
-                                id: "Th-2-sc-03-se-01",
-                                name: "A1",
-                                booked: false,
-                                price: 200,
+                        seats: [ {
+                            "A" : {
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-03-se-01-A1",
+                                        name: "A1",
+                                        price: 200,
+                                        booked: true,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-02-A2",
+                                        name: "A2",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-03-A3",
+                                        name: "A3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.8,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-2-sc-03-se-02",
-                                name: "A2",
-                                booked: true,
-                                price: 200,
+                            "B" : {
+                                id: "B1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-03-se-01-B1",
+                                        name: "B1",
+                                        price: 200,
+                                        percentage: 0.6,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-02-B2",
+                                        name: "B2",
+                                        percentage: 0.6,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-03-B3",
+                                        name: "B3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.6,
+                                    },
+                                ]
                             },
-                            {
-                                id: "Th-2-sc-03-se-03",
-                                name: "A3",
-                                booked: false,
-                                price: 200,
-                            },
-                        ]
+                            "C" : {
+                                id: "C1",
+                                seat: [
+                                    {
+                                        id: "Th-2-sc-03-se-01-C1",
+                                        name: "C1",
+                                        price: 200,
+                                        percentage: 0.5,
+                                        booked: true,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-02-C2",
+                                        name: "C2",
+                                        percentage: 0.5,
+                                        price: 200,
+                                        booked: false,
+                                    },
+                                    {
+                                        id: "Th-2-sc-03-se-03-C3",
+                                        name: "C3",
+                                        price: 200,
+                                        booked: false,
+                                        percentage: 0.5,
+                                    },
+                                ]
+                            }
+                    }]
                     },
                 ]
             },
